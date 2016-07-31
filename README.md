@@ -1,4 +1,11 @@
-#  browser-sync + nodemon + expressjs
+# Falcor Punch
+
+Sample project to try and reduce the network traffic and client side development within a micro service architecture.  
+
+Falcor lets you represent all your remote data sources as a single domain model via a virtual JSON graph. You code the same way no matter where the data is, whether in memory on the client or over the network on the server.
+>http://netflix.github.io/falcor/
+
+## Yo-Template  _browser-sync + nodemon + expressjs_
 
 A gulp recipe using vanilla [```browser-sync```](https://github.com/shakyShane/browser-sync) and [```gulp-nodemon```](https://github.com/JacksonGariety/gulp-nodemon) to run an ExpressJS server app with live-reloading.
 
@@ -7,7 +14,7 @@ With the combination of these two, we can achieve the following use-cases:
 * Reload page when affected files are modified (HTML, partials, client-side JavaScript code).
 * Restart server when core server files are modified.
 
-## Running the example
+### Running the example
 
 Run ```gulp``` to start
 
@@ -22,9 +29,9 @@ Run ```gulp``` to start
     * Edit ```public/main.js``` to see ```browser-sync``` reloading browser upon change
     * Edit ```server.js``` to see ```nodemon``` restarting server and ```browser-sync``` reloading page upon page
 
-## Notes
+### Notes
 
-### [BS] [ERROR] Proxy address not reachable. Is your server running?
+#### [BS] [ERROR] Proxy address not reachable. Is your server running?
 
 Running an older version of ```gulp``` may show the following output
 
@@ -56,3 +63,7 @@ The output shows a ```[BS] [ERROR] Proxy address not reachable. Is your server r
 other than that, everything else seems to work (both injection and reload).
 
 Nonetheless, I've raised an issue at https://github.com/shakyShane/gulp-browser-sync/issues/25
+
+## Credit
+
+Project was heavily influenced by [falcor-experiment](https://github.com/tivac/falcor-experiment). Thanks!
